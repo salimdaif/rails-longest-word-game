@@ -1,0 +1,13 @@
+<h1>Play#game</h1>
+
+<h2>******** Welcome to the longest word-game !********</h2>
+<h3>Here is your grid :</h3>
+<h3><%= @grid%> </h3>
+*****************************************************
+
+<form action="/score">
+  <label for="question">Compose the longest word:</label>
+  <input type="text hidden" id="question" name="guess" placeholder="your word here">
+  <input type="hidden" name="start_time" value = "<%=Time.now%>" >
+  <input type="submit" id= "submit" value="Submit!">
+</form>
